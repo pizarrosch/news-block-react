@@ -2,13 +2,15 @@
   display: flex;
   justify-content: end;
   margin-right: 15px;
+  cursor: pointer;
 }
 
-.imageSize {
+img {
   width: 35px;
   height: 35px;
 }
 
 .dark {
   background-color: black;
+  color: white;
 }

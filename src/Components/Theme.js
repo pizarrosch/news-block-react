@@ -1,26 +1,20 @@
 import style from './Theme.module.css';
 import {useState} from "react";
 
-function Theme() {
+function Theme(props) {
 
-  const [theme, setTheme] = useState('light');
-
-  function handleClick() {
-   if (theme === 'light') {
-     setTheme('dark');
-   } else {
-     setTheme('light');
-   }
-  }
+  const html = document.querySelector('html');
 
   return (
-    <div className={style.image} onClick={handleClick}>
-      {
-        theme === 'light' ?
-          <img className={style.imageSize} src={require('../images/icons8-sun.svg').default} alt='sun'/> :
-          <img className={style.imageSize} src={require('../images/clear_night.svg').default} alt='moon'/>
-      }
-    </div>
+    <>
+      <div className={props.theme === 'dark' ? html.style.backgroundColor='black' : html.style.backgroundColor='white'}>
+        <div className={style.image} onClick={props.onClick}>
+          {props.theme === 'light' ?
+            <img src={require('../images/icons8-sun.svg').default} alt='sun'/> :
+            <img src={require('../images/clear_night.svg').default} alt='moon'/>}
+        </div>
+      </div>
+    </>
   )
 }
 
