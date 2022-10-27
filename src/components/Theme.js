@@ -1,5 +1,4 @@
 import style from './Theme.module.css';
-import {useState} from "react";
 
 function Theme(props) {
 
