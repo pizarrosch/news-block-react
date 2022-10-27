@@ -21,11 +21,11 @@ function App() {
 
   return (
     <div>
-      <Theme theme={theme} onClick={handleThemeClick} />
+      <Theme theme={theme} onClick={handleThemeClick}/>
       <Router>
         <Routes>
-          <Route path='/' element={<Topics topics={news} theme={theme} />} />
-          <Route path='/news/:topic' element={ <News topics={news} theme={theme} />} />
+          <Route path='/' element={<Topics topics={news} theme={theme}/>}/>
+          <Route path='/news/:topic' element={<News topics={news} theme={theme}/>}/>
           <Route path='/news/:topic/:article' element={<Articles topics={news} theme={theme}/>}/>
         </Routes>
       </Router>
