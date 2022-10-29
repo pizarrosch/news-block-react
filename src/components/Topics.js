@@ -5,6 +5,7 @@ import cx from "classnames";
 function Topics({topics, theme}) {
 
   return (
+    <div className={s.wrapping}>
     <div className={s.container}>
       {topics.map((topic) => (
           <Link className={s.link} to={`/news/${topic.title}`}>
@@ -16,6 +17,7 @@ function Topics({topics, theme}) {
           </Link>
         )
       )}
+    </div>
     </div>
   )
 }

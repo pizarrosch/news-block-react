@@ -12,20 +12,20 @@ function News({topics, theme}) {
   }).news
 
   return (
-    <div>
+    <>
       <ReturnButton theme={theme}/>
-      {filteredNews.map((item) => (
-        <div className={s.container} key={item.id}>
-          <Link className={theme === 'dark' ? s.newsItemDark : s.newsItem} to={`/news/${item.title}/${item.alt}`}>
-            <h1>{item.description}</h1>
-            <div className={s.imageAndPretextContainer}>
+      <div className={s.mainContainer}>
+        {filteredNews.map((item) => (
+          <div className={s.container} key={item.id}>
+            <Link className={theme === 'dark' ? s.newsItemDark : s.newsItem} to={`/news/${item.title}/${item.alt}`}>
               <img className={s.itemImage} src={item.image} alt={item.alt}/>
+              <h1>{item.description}</h1>
               <p className={theme === 'dark' ? s.darkPretext : s.pretext}>{item.insight}</p>
-            </div>
-          </Link>
-        </div>
-      ))}
-    </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </>
   )
 }
 
