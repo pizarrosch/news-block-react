@@ -1,9 +1,11 @@
+import s from './Filter.module.css';
+
 function Filter({filterName, onClick}) {
 
   return (
-    <select onClick={onClick}>
+    <select className={s.filter} onClick={onClick}>
       {filterName.map((item) => {
-        return <option value={item}>{item}</option>
+        return <option className={s.option} value={item}>{item}</option>
       })}
     </select>
   )

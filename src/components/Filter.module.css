@@ -1,0 +1,33 @@
+.filter,
+.filterDark {
+  border-radius: 8px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  padding: 10px 50px 10px 50px;
+  outline-style: none;
+  margin-left: 60px;
+  transition: 0.3s;
+}
+
+.filter {
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0 6px 24px 0,
+    rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.filter:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0 10px 36px 0,
+    rgba(0, 0, 0, 0.16) 0 0 0 1px;
+}
+
+.filterDark:hover {
+  box-shadow:
+    rgba(255, 255, 255, 0.26) 0 10px 36px 0,
+    rgba(255, 255, 255, 0.16) 0 0 0 1px;
+}
+
+.option {
+  padding: 5px 0 5px 0;
+}
