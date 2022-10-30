@@ -19,51 +19,51 @@ const news = [
         id: 0,
         title: 'Books',
         description: "Arthur Conan Doyle 'Adventures of Sherlock Holmes'",
-        genre: 'detective-story',
+        category: 'detective-story',
         alt: 'Sherlock'
       },
       {
         id: 1,
         title: 'Books',
         description: "Ernest Hemingway 'The old man and the sea'",
-        genre: 'novel',
+        category: 'novel',
         alt: 'Hemingway'
       },
       {
         id: 2,
         title: 'Books',
         description: "Agatha Christie 'The mysterious affair at Styles'",
-        genre: 'detective-story'
+        category: 'detective-story'
       },
       {
         id: 3,
         title: 'Books',
         description: "Charles Dickens 'Bleak house'",
-        genre: 'novel'
+        category: 'novel'
       },
       {
         id: 4,
         title: 'Books',
         description: "John Steinbeck 'Of mice and men'",
-        genre: 'novella'
+        category: 'novella'
       },
       {
         id: 5,
         title: 'Books',
         description: "George Orwell 'Animal farm'",
-        genre: 'novella'
+        category: 'novella'
       },
       {
         id: 6,
         title: 'Books',
         description: "Charles Dickens 'A Christmas carol'",
-        genre: 'novella'
+        category: 'novella'
       },
       {
         id: 7,
         title: 'Books',
         description: "Edgar Allan Poe 'The murders in the Rue Morgue'",
-        genre: 'detective-story'
+        category: 'detective-story'
       }
     ]
   },
@@ -79,7 +79,7 @@ const news = [
         description: 'Lions return to zoo after Storm Eunice damage',
         image: lions,
         insight: 'Zero, Mo, Tor, Kaya and Jabu, went on a 10-week holiday to Whipsnade from Africa Live in Suffolk.',
-        species: 'wild-animals',
+        category: 'Wild-animals',
         alt: 'Lions',
       },
       {
@@ -88,7 +88,7 @@ const news = [
         description: 'Tiny Yorkie loses leg after venomous snake bite',
         image: dog,
         insight: 'Junior the Yorkshire terrier is in a critical condition after being attacked by an adder on a walk.',
-        species: 'dogs',
+        category: 'Dogs',
         alt: 'Yorkie',
       },
       {
@@ -97,7 +97,7 @@ const news = [
         description: 'Police appeal after 55 sheep stolen on Lewis',
         image: sheep,
         insight: 'Extensive searches have been made for the animals, but no trace of them has been found.',
-        species: 'cattle',
+        category: 'Cattle',
         alt: 'theSheep',
       },
       {
@@ -106,7 +106,7 @@ const news = [
         description: 'Opinions divided over reintroduction of lynx',
         image: lynx,
         insight: 'The first detailed social feasibility study into a trial reintroduction of the cat has been held.',
-        species: 'wild-animals',
+        category: 'Wild-animals',
         alt: 'Lynx',
       },
       {
