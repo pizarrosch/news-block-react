@@ -21,7 +21,7 @@ function Articles({topics, theme}) {
             <div className={s.container}>
               <div className={theme === 'dark' ? s.textContainerDark : s.textContainer}>
                 <h1>{item.description}</h1>
-                <p className={s.paragraph}>{articlesList[article]}</p>
+                <p className={s.paragraph} dangerouslySetInnerHTML={{ __html: articlesList[article] }}></p>
               </div>
             </div>
           )

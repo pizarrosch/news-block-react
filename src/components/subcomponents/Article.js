@@ -1,6 +1,6 @@
 export const articlesList = {
   Lions: (
-    <article>
+    `<article>
       <p>A pride of lions who lost their enclosure due to damage caused by Storm Eunice are set to return to Africa
         Alive this weekend.
         The lions had been rehomed at ZSL Whipsnade Zoo in Dunstable since February, but will return with a 'welcome
@@ -10,10 +10,10 @@ export const articlesList = {
         to the landscape of the enclosure for the lions – including adding a bark pit,
         two new raised platforms which were made by the keepers and a secondary holding yard to facilitate outdoor
         access for the lions in adverse weather.</p>
-    </article>
+    </article>`
   ),
   Yorkie: (
-    <article>
+    `<article>
       <p>A Yorkshire terrier has had his leg amputated after being bitten by a venomous snake in the Scottish
         countryside.</p>
 
@@ -35,10 +35,10 @@ export const articlesList = {
 
         "He had a comfortable evening but they are still concerned about him, as he hasn't eaten for days. He has been
         put back on to the feeding tube and the glucose drip but he needs to eat to mend."</q></p>
-    </article>
+    </article>`
   ),
   theSheep: (
-    <article>
+    `<article>
       <p>Police believe 55 sheep have been stolen from crofters' land on Lewis in the Western Isles.</p>
 
       <p>The theft involves 32 ewes and 23 unborn lambs from Laxay common grazing, an area shared by crofters for
@@ -58,10 +58,10 @@ export const articlesList = {
 
         "We’re also interested in speaking with anyone who believes they may have been offered the sale of these sheep
         recently.”</p>
-    </article>
+    </article>`
   ),
   Lynx: (
-    <article>
+    `<article>
       <p><b>The first detailed social feasibility study into a trial reintroduction of lynx to Scotland has found that
         opinions on the idea are divided.</b></p>
 
@@ -87,7 +87,7 @@ export const articlesList = {
         <q>Positively, this new research shows there is sufficient appetite amongst different stakeholders to develop a
           more comprehensive understanding of this little-known species and the potential for its return to
           Scotland.</q></p>
-    </article>
+    </article>`
   )
 }
 
