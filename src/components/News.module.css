@@ -1,24 +1,10 @@
 .mainContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 2vh;
-  column-gap: 1vw;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-@media (min-width: 3000px) {
-  .newsItem {
-    width: 30vw
-  }
-
-  .container {
-    width: 90vw;
-  }
-
-  .itemImage {
-    width: 2em;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  max-width: 70%;
+  margin: 30px auto;
 }
 
 .newsItem {
@@ -29,15 +15,13 @@
     rgba(0, 0, 0, 0.05) 0 6px 24px 0,
     rgba(0, 0, 0, 0.08) 0 0 0 1px;
   cursor: pointer;
-  padding: 5px 50px 5px 50px;
   transition: 0.3s;
-  margin-bottom: 15px;
   text-decoration: none;
   color: black;
-  width: 20vw;
+  width: 15vw;
   text-align: center;
   font-family: Roboto, sans-serif;
-  height: 50vh;
+  height: auto;
 }
 
 .newsItemDark {
@@ -48,18 +32,17 @@
   outline-color: #262626;
   color: #b8ab99;
   cursor: pointer;
-  padding: 5px 50px 5px 50px;
   transition: 0.3s;
-  margin-bottom: 15px;
   text-decoration: none;
-  width: 20vw;
+  width: 15vw;
   text-align: center;
   font-family: Roboto, sans-serif;
-  height: 50vh;
+  height: auto;
 }
 
 h1 {
   font-family: Roboto bold, sans-serif;
+  font-size: 20px;
 }
 
 .newsItem:hover {
@@ -77,17 +60,28 @@ h1 {
 .itemImage {
   justify-self: center;
   border-radius: 8px;
-  width: 20vw;
-  height: 200px;
+  width: 15vw;
+  height: auto;
 }
-
-/*.pretext {*/
-/*  display: block;*/
-/*  margin-left: 70px;*/
-/*  width: 600px;*/
-/*  height: 100px;*/
-/*}*/
 
 .darkPretext {
   color: white;
+}
+
+@media (min-width: 2000px) {
+  .mainContainer {
+    max-width: 60%;
+  }
+
+  .newsItem {
+    width: 10vw;
+  }
+
+  .itemImage {
+    width: 10vw;
+  }
+
+  .newsItemDark {
+    width: 10vw;
+  }
 }

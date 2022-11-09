@@ -4,6 +4,7 @@ import ReturnButton from "./ReturnButton";
 import {Link} from "react-router-dom";
 import Filter from "./Filter";
 import {useState} from "react";
+import placeholder from '../images/placeholder-image.png';
 
 function News({topics, theme}) {
 
@@ -33,21 +34,21 @@ function News({topics, theme}) {
   }
 
   return (
-    <>
+    <div className={s.wrapper}>
       <ReturnButton theme={theme}/>
       <Filter topics={topics} filterName={filterName} onClick={handleSelectClick}/>
       <div className={s.mainContainer}>
         {filteredNews.filter((item) => subdivision === item.category || subdivision === 'All').map((item) => (
-          <div className={s.container} key={item.id}>
+          <div key={item.id}>
             <Link className={theme === 'dark' ? s.newsItemDark : s.newsItem} to={`/news/${item.title}/${item.alt}`}>
-              <img className={s.itemImage} src={item.image} alt={item.alt}/>
+              {item.image ? <img className={s.itemImage} src={item.image} alt={item.alt}/> : <img className={s.itemImage} src={placeholder} alt='placeholder'/>}
               <h1>{item.description}</h1>
               <p className={theme === 'dark' ? s.darkPretext : null}>{item.insight}</p>
             </Link>
           </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
